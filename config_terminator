@@ -573,40 +573,40 @@
       profile = default
       type = Terminal
 
-  [[navypslegends]]
+  [[navypsshipps]]
     [[[child0]]]
       parent = ""
-      title = navypslegends
+      title = navypsshipps
       type = Window
     [[[child1]]]
       parent = child0
       type = Notebook
     [[[terminal01]]]
-      command = "ssh navypslegends@bwc-navypslegends.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypslegends@bwc-navypslegends.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      command = "ssh navypsshipps@bwc-navypsshipps.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshipps@bwc-navypsshipps.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
       order = 0
       parent = child1
       profile = default
       type = Terminal
     [[[terminal11]]]
-      command = "ssh navypslegendsmaster1@bwc-navypslegendsmaster1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navypslegendsmaster1@bwc-navypslegendsmaster1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      command = "ssh navypsshippsmaster1@bwc-navypsshippsmaster1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navypsshippsmaster1@bwc-navypsshippsmaster1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
       order = 1
       parent = child1
       profile = default
       type = Terminal
     [[[terminal12]]]
-      command = "ssh navypslegendsmaster2@bwc-navypslegendsmater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypslegendsmaster2@bwc-navypslegendsmaster2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      command = "ssh navypsshippsmaster2@bwc-navypsshippsmater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshippsmaster2@bwc-navypsshippsmaster2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
       order = 2
       parent = child1
       profile = default
       type = Terminal
     [[[terminal21]]]
-      command = "ssh navypslegendsslave1@bwc-navypslegendsslave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypslegendsslave1@bwc-navypslegendsslave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      command = "ssh navypsshippsslave1@bwc-navypsshippsslave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshippsslave1@bwc-navypsshippsslave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
       order = 3
       parent = child1
       profile = default
       type = Terminal
     [[[terminal22]]]
-      command = "ssh navypslegendsslave2@bwc-navypslegendsslave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navypslegendsslave2@bwc-navypslegendsslave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      command = "ssh navypsshippsslave2@bwc-navypsshippsslave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navypsshippsslave2@bwc-navypsshippsslave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
       order = 4
       parent = child1
       profile = default
