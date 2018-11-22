@@ -1,4 +1,5 @@
 [global_config]
+  always_split_with_profile = True
   dbus = False
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler
   focus = system
@@ -26,6 +27,196 @@
     [[[window0]]]
       parent = ""
       type = Window
+  [[navypsshipps]]
+    [[[child0]]]
+      parent = ""
+      title = navypsshipps
+      type = Window
+    [[[child1]]]
+      parent = child0
+      type = Notebook
+    [[[terminal01]]]
+      command = "ssh navypsshipps@bwc-navypsshipps.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshipps@bwc-navypsshipps.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal11]]]
+      command = "ssh navypsshippsmaster1@bwc-navypsshippsmaster1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navypsshippsmaster1@bwc-navypsshippsmaster1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal12]]]
+      command = "ssh navypsshippsmaster2@bwc-navypsshippsmater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshippsmaster2@bwc-navypsshippsmaster2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal21]]]
+      command = "ssh navypsshippsslave1@bwc-navypsshippsslave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshippsslave1@bwc-navypsshippsslave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 3
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal22]]]
+      command = "ssh navypsshippsslave2@bwc-navypsshippsslave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navypsshippsslave2@bwc-navypsshippsslave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 4
+      parent = child1
+      profile = default
+      type = Terminal
+  [[navyxshipx]]
+    [[[child0]]]
+      parent = ""
+      title = NAVYXSHIPX
+      type = Window
+    [[[child1]]]
+      parent = child0
+      type = Notebook
+    [[[terminal01]]]
+      command = "ssh navyxshipx@bwc-navyxshipx.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxshipx@bwc-navyxshipx.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal11]]]
+      command = "ssh navyxshipxmaster1@bwc-navyxshipxmaster1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navyxshipxmaster1@bwc-navyxshipxmaster1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal12]]]
+      command = "ssh navyxshipxmaster2@bwc-navyxshipxmater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxshipxmaster2@bwc-navyxshipxmaster2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal21]]]
+      command = "ssh navyxshipxslave1@bwc-navyxshipxslave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxshipxslave1@bwc-navyxshipxslave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 3
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal22]]]
+      command = "ssh navyxshipxslave2@bwc-navyxshipxslave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navyxshipxslave2@bwc-navyxshipxslave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 4
+      parent = child1
+      profile = default
+      type = Terminal
+  [[navyxcert1]]
+    [[[child0]]]
+      parent = ""
+      title = navyxcert1
+      type = Window
+    [[[child1]]]
+      parent = child0
+      type = Notebook
+    [[[terminal01]]]
+      command = "ssh navyxcert1@bwc-navyxcert1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxcert1@bwc-navyxcert1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal11]]]
+      command = "ssh navyxcert1master1@bwc-navyxcert1master1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navyxcert1master1@bwc-navyxcert1master1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal12]]]
+      command = "ssh navyxcert1master2@bwc-navyxcert1mater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxcert1master2@bwc-navyxcert1master2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal21]]]
+      command = "ssh navyxcert1slave1@bwc-navyxcert1slave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxcert1slave1@bwc-navyxcert1slave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 3
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal22]]]
+      command = "ssh navyxcert1slave2@bwc-navyxcert1slave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navyxcert1slave2@bwc-navyxcert1slave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 4
+      parent = child1
+      profile = default
+      type = Terminal
+  [[navyxnxsb]]
+    [[[child0]]]
+      parent = ""
+      title = navyxnxsb
+      type = Window
+    [[[child1]]]
+      parent = child0
+      type = Notebook
+    [[[terminal01]]]
+      command = "ssh navyxnxsb@bwc-navyxnxsb.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxnxsb@bwc-navyxnxsb.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal11]]]
+      command = "ssh navyxnxsbmaster1@bwc-navyxnxsbmaster1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navyxnxsbmaster1@bwc-navyxnxsbmaster1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal12]]]
+      command = "ssh navyxnxsbmaster2@bwc-navyxnxsbmater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxnxsbmaster2@bwc-navyxnxsbmaster2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal21]]]
+      command = "ssh navyxnxsbslave1@bwc-navyxnxsbslave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxnxsbslave1@bwc-navyxnxsbslave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 3
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal22]]]
+      command = "ssh navyxnxsbslave2@bwc-navyxnxsbslave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navyxnxsbslave2@bwc-navyxnxsbslave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 4
+      parent = child1
+      profile = default
+      type = Terminal
+  [[navypscert1]]
+    [[[child0]]]
+      parent = ""
+      title = navypscert1
+      type = Window
+    [[[child1]]]
+      parent = child0
+      type = Notebook
+    [[[terminal01]]]
+      command = "ssh navypscert1@bwc-navypscert1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypscert1@bwc-navypscert1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal11]]]
+      command = "ssh navypscert1master1@bwc-navypscert1master1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navypscert1master1@bwc-navypscert1master1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal12]]]
+      command = "ssh navypscert1master2@bwc-navypscert1mater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypscert1master2@bwc-navypscert1master2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal21]]]
+      command = "ssh navypscert1slave1@bwc-navypscert1slave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypscert1slave1@bwc-navypscert1slave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 3
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal22]]]
+      command = "ssh navypscert1slave2@bwc-navypscert1slave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navypscert1slave2@bwc-navypscert1slave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
+      order = 4
+      parent = child1
+      profile = default
+      type = Terminal
   [[twa_all]]
     [[[child0]]]
       fullscreen = False
@@ -59,29 +250,29 @@
       order = 0
       parent = child1
       profile = RAW
-      type = Terminal
       title = RU
+      type = Terminal
     [[[terminal4]]]
       command = ssh -l dockeroperator bwc-twaeu.wgdp.io -p 2200 -A
       order = 0
       parent = child3
       profile = RAW
-      type = Terminal
       title = EU
+      type = Terminal
     [[[terminal6]]]
       command = ssh -l dockeroperator bwc-twana.wgdp.io -p 2200 -A
       order = 0
       parent = child5
       profile = RAW
-      type = Terminal
       title = NA
+      type = Terminal
     [[[terminal7]]]
       command = ssh -l dockeroperator bwc-twaasia.wgdp.io -p 2200 -A
       order = 1
       parent = child5
       profile = RAW
-      type = Terminal
       title = ASIA
+      type = Terminal
   [[wotru]]
     [[[child0]]]
       parent = ""
@@ -533,91 +724,12 @@
       parent = child1
       profile = default
       type = Terminal
-
-  [[navyxshipx]]
-    [[[child0]]]
-      parent = ""
-      title = NAVYXSHIPX
-      type = Window
-    [[[child1]]]
-      parent = child0
-      type = Notebook
-    [[[terminal01]]]
-      command = "ssh navyxshipx@bwc-navyxshipx.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxshipx@bwc-navyxshipx.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
-      order = 0
-      parent = child1
-      profile = default
-      type = Terminal
-    [[[terminal11]]]
-      command = "ssh navyxshipxmaster1@bwc-navyxshipxmaster1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navyxshipxmaster1@bwc-navyxshipxmaster1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
-      order = 1
-      parent = child1
-      profile = default
-      type = Terminal
-    [[[terminal12]]]
-      command = "ssh navyxshipxmaster2@bwc-navyxshipxmater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxshipxmaster2@bwc-navyxshipxmaster2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
-      order = 2
-      parent = child1
-      profile = default
-      type = Terminal
-    [[[terminal21]]]
-      command = "ssh navyxshipxslave1@bwc-navyxshipxslave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navyxshipxslave1@bwc-navyxshipxslave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
-      order = 3
-      parent = child1
-      profile = default
-      type = Terminal
-    [[[terminal22]]]
-      command = "ssh navyxshipxslave2@bwc-navyxshipxslave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navyxshipxslave2@bwc-navyxshipxslave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
-      order = 4
-      parent = child1
-      profile = default
-      type = Terminal
-
-  [[navypsshipps]]
-    [[[child0]]]
-      parent = ""
-      title = navypsshipps
-      type = Window
-    [[[child1]]]
-      parent = child0
-      type = Notebook
-    [[[terminal01]]]
-      command = "ssh navypsshipps@bwc-navypsshipps.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshipps@bwc-navypsshipps.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
-      order = 0
-      parent = child1
-      profile = default
-      type = Terminal
-    [[[terminal11]]]
-      command = "ssh navypsshippsmaster1@bwc-navypsshippsmaster1.wgdp.io -p2200 -A -t 'screen -r r_verenich' || ssh navypsshippsmaster1@bwc-navypsshippsmaster1.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
-      order = 1
-      parent = child1
-      profile = default
-      type = Terminal
-    [[[terminal12]]]
-      command = "ssh navypsshippsmaster2@bwc-navypsshippsmater2.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshippsmaster2@bwc-navypsshippsmaster2.wgdp.io -A -p2200 -t 'screen -S r_verenich'"
-      order = 2
-      parent = child1
-      profile = default
-      type = Terminal
-    [[[terminal21]]]
-      command = "ssh navypsshippsslave1@bwc-navypsshippsslave1.wgdp.io -A -p2200 -t 'screen -r r_verenich' || ssh navypsshippsslave1@bwc-navypsshippsslave1.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
-      order = 3
-      parent = child1
-      profile = default
-      type = Terminal
-    [[[terminal22]]]
-      command = "ssh navypsshippsslave2@bwc-navypsshippsslave2.wgdp.io -A -p 2200 -t 'screen -r r_verenich' || ssh navypsshippsslave2@bwc-navypsshippsslave2.wgdp.io -A -p 2200 -t 'screen -S r_verenich'"
-      order = 4
-      parent = child1
-      profile = default
-      type = Terminal
-
 [plugins]
 [profiles]
   [[default]]
     background_color = "#282828"
     cursor_color = "#8f9552"
-    font = Source Code Pro 16
+    font = Source Code Pro 14
     foreground_color = "#ebdbb2"
     palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
     scrollback_infinite = True
@@ -625,19 +737,13 @@
   [[RAW]]
     background_color = "#282828"
     cursor_color = "#aaaaaa"
-    font = Terminus 10
+    font = Terminus 12
     foreground_color = "#ebdbb2"
     palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
     scrollback_infinite = True
     use_system_font = False
   [[darkOnBlack]]
-    background_color = "#fbf1c7"
-    cursor_color = "#8f9552"
-    font = Source Code Pro 14
-    foreground_color = "#3c3836"
-    palette = "#fbf1c7:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#7c6f64:#928374:#9d0006:#79740e:#b57614:#076678:#8f3f71:#427b58:#3c3836"
-    scrollback_infinite = True
-    use_system_font = False
+    cursor_color = "#aaaaaa"
   [[solarized_dark]]
     background_color = "#002b36"
     cursor_color = "#eee8d5"
@@ -652,4 +758,12 @@
     font = Source Code Pro Medium 12
     foreground_color = "#657b83"
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+  [[tiniest]]
+    background_color = "#282828"
+    cursor_color = "#8f9552"
+    font = Terminus 8
+    foreground_color = "#ebdbb2"
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    scrollback_infinite = True
     use_system_font = False

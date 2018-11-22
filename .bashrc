@@ -119,6 +119,7 @@ fi
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export EDITOR=vim
 export GOPATH=~/.go
+export FZF_DEFAULT_COMMAND='rg --files'
 
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
