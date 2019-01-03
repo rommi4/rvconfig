@@ -26,7 +26,7 @@ bssh()
 apmup()
 {
   ATOM_INSTALLED_VERSION=$(rpm -qi atom | grep "Version" | cut -d ':' -f 2 | cut -d ' ' -f 2)
-  ATOM_LATEST_VERSION=$(curl -sL "https://api.github.com/repos/atom/atom/releases/latest" | grep -E "https.*atom-amd64.tar.gz" | cut -d '"' -f 4 | cut -d '/' -f 8 | sed 's/v//g')
+  ATOM_LATEST_VERSION=$(curl -sL -u rommi4:$(grep GITHUB ~/.rvx_creds | cut -f2 -d'=') "https://api.github.com/repos/atom/atom/releases/latest" | grep -E "https.*atom-amd64.tar.gz" | cut -d '"' -f 4 | cut -d '/' -f 8 | sed 's/v//g')
   echo "ATOM_INSTALLED_VERSION: $ATOM_INSTALLED_VERSION"
   echo "ATOM_LATEST_VERSION: $ATOM_LATEST_VERSION"
 
