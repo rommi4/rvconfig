@@ -4,6 +4,7 @@ alias vpndisconnect='/opt/cisco/anyconnect/bin/vpn disconnect'
 alias vpnstatus='/opt/cisco/anyconnect/bin/vpn status'
 alias dnfup='sudo dnf clean metadata && sudo dnf upgrade'
 alias vim='gvim -v'
+alias vimdiff='gvimdiff -v'
 alias weather='curl http://wttr.in/Minsk'
 alias bton='echo "power on" | bluetoothctl'
 

@@ -43,12 +43,6 @@ set switchbuf=useopen
 
 " easytags
 set tags=./tags;,~/.vimtags
-" Sensible defaults
-let g:easytags_events = ['BufReadPost', 'BufWritePost']
-let g:easytags_async = 1
-let g:easytags_dynamic_files = 2
-let g:easytags_resolve_links = 1
-let g:easytags_suppress_ctags_warning = 1
 
 "disable beeper and blinking
 set visualbell t_vb=
@@ -222,6 +216,7 @@ let g:pymode_python = 'python3'
 """ ALE
 " =============
 let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_enter = 0
 
 
@@ -279,3 +274,10 @@ let g:go_metalinter_deadline = "5s"
 
 " -- fzf --
 nnoremap <C-p> :<C-u>FZF<CR>
+
+
+" Plugins need to be added to runtime path before helptags can be generated
+packloadall
+" Load all of the helptags now, after plugins have been loaded
+" All messages and errors will be ignored.
+silent! helptags ALL
