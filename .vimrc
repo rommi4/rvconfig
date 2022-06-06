@@ -22,9 +22,10 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-colorscheme gruvbox
-let g:gruvbox_termcolors=256
-set background=dark
+"colorscheme pablo
+set background=light
+colorscheme default
+"let g:gruvbox_termcolors=256
 set cursorline
 
 if &term =~ '256color'
@@ -54,6 +55,9 @@ set enc=utf-8   "utf-8 by default
 map <F4> :TagbarToggle<CR>
 let g:tagbar_autofocus=0
 
+hi LineNr       term=bold cterm=bold ctermfg=2 ctermbg=236 guifg=Grey guibg=Grey90
+hi clear CursorLine
+
 "common stuff
 " briefly jumt to the matching bracket
 set showmatch
@@ -63,7 +67,6 @@ set nocompatible
 set hidden
 " print the line number in front of each line
 set number
-hi LineNr       term=bold cterm=bold ctermfg=2 ctermbg=236 guifg=Grey guibg=Grey90
 " Changes the special characters that can be used in search patterns
 set magic
 " Show (partial) command in the last line of the screen

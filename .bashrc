@@ -105,9 +105,25 @@ fi
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export EDITOR=vim
 export GOPATH=~/.go
+export PATH="$PATH:${GOPATH}/bin"
 export FZF_DEFAULT_COMMAND='rg --files'
 
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
 
+### kubectl autocompletion 
+source <(kubectl completion bash)
+
+### terraform autocompletion
+complete -C ~/bin/terraform terraform
+
+# Temporary https://stackoverflow.com/questions/64010263/gcloud-not-working-with-fedora33-and-python3-9
+# again fedora 35, python3.10
+export CLOUDSDK_PYTHON=python3.7
+export GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_credentials.json
+
+# eval "$(starship init bash)"
+
+### https://www.terraform.io/cli/config/config-file
+export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"

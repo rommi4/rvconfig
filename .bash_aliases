@@ -1,7 +1,4 @@
 alias mc='EDITOR=vim mc -S dark'
-alias vpnconnect='/opt/cisco/anyconnect/bin/vpn connect vpn.mgsn.it:8443'
-alias vpndisconnect='/opt/cisco/anyconnect/bin/vpn disconnect'
-alias vpnstatus='/opt/cisco/anyconnect/bin/vpn status'
 alias dnfup='sudo dnf clean metadata && sudo dnf upgrade'
 alias vim='gvim -v'
 alias vimdiff='gvimdiff -v'
